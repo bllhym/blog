@@ -1,6 +1,21 @@
 ---
 layout: default
 ---
-<div class="home">
-  {{ content | toc_generate }}
+<link rel="stylesheet" href="{{ "/assets/css/top.css" | relative_url }}">
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.toc.js"></script>
+<script type="text/javascript">
+  $(function () {
+    $('#home').toc({
+      showAlways: true,
+      renderIn: '#toc',
+      contentsText: "Legenda",
+      hideText: 'Collapse',
+      showText: 'Expand',
+      showCollapsed: true
+    });
+  });
+</script>
+<div class="home" id="home">
+  <div id="toc"></div>
 </div>
