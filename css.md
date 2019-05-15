@@ -5,8 +5,7 @@
 # To change the home page layout, edit the _layouts/home.html file.
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
-layout: js
+layout: index
 title: css特效
 tags: css特效
-noToc: true
 ---
