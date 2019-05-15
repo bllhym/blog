@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
+
 <div class="home">
-  {%- if page.name=="js" -%}
+  {%- if page.name=="js" or page.name=="index" -%}
    {%- include js.html -%}
   {%- endif -%}
-  {%- if page.name=="css" -%}
+  {%- if page.name=="css" or page.name=="index" -%}
   {%- include css.html -%}
   {%- endif -%}
 </div>
