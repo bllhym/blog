@@ -1,21 +1,11 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" href="{{ "/assets/css/top.css" | relative_url }}">
-<script src="{{ "/assets/js/jquery.min.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/jquery.toc.js" | relative_url }}"></script>
-<script type="text/javascript">
-  $(function () {
-    $('#home').toc({
-      showAlways: true,
-      renderIn: '#toc',
-      contentsText: "Legenda",
-      hideText: 'Collapse',
-      showText: 'Expand',
-      showCollapsed: true
-    });
-  });
-</script>
-<div class="home" id="home">
-  <div id="toc"></div>
+<div class="home">
+  {%- if page.name=="js" -%}
+   {%- include js.html -%}
+  {%- endif -%}
+  {%- if page.name=="css" -%}
+  {%- include css.html -%}
+  {%- endif -%}
 </div>
