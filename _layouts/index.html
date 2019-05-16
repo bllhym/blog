@@ -3,14 +3,14 @@ layout: default
 ---
 
 <div class="home">
+   {{ page.name | escape }}
   {%- include js.html -%}
   {%- if page.name=="js" -%}
    {%- include js.html -%}
-  {%- endif -%}
-  {%- if page.name=="css" -%}
+
+  {%- elseif page.name=="css" -%}
   {%- include css.html -%}
-  {%- endif -%}
-  {%- if if page.name=="index"&&site.posts.size > 0 -%}
+  {%- else site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   <ul class="post-list">
     {%- for post in site.posts -%}
