@@ -1,4 +1,16 @@
 <h2 class="post-list-heading">css特效</h2>
 <ul class="post-list">
-    <li><h3><a class="post-link" href="">暂无</a></h3></li>
+    <{%- for post in site.categories["css"] -%} <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h4>
+            <a class="post-link" href="{{ post.url | relative_url }}" target="_blank">
+                {{ post.title | escape }}
+            </a>
+        </h4>
+        {%- if site.show_excerpts -%}
+        {{ post.excerpt }}
+        {%- endif -%}
+        </li>
+        {%- endfor -%}
 </ul>

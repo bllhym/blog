@@ -3,12 +3,10 @@ layout: default
 ---
 
 <div class="home">
-   {{ page.name | escape }}
-  {%- include js.html -%}
-  {%- if page.name=="js" -%}
+  {%- if page.name=="js.md" -%}
    {%- include js.html -%}
 
-  {%- elsif page.name=="css" -%}
+  {%- elsif page.name=="css.md" -%}
   {%- include css.html -%}
   {%- else site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
