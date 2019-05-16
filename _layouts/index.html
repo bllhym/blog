@@ -8,6 +8,10 @@ layout: default
 
   {%- elsif page.name=="css.md" -%}
   {%- include css.html -%}
+
+  {%- elsif page.name=="tool.md" -%}
+  {%- include tool.html -%}
+
   {%- else site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "所有特效" }}</h2>
   <ul class="post-list">
