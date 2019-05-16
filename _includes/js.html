@@ -1,4 +1,17 @@
 <h2 class="post-list-heading">js特效</h2>
 <ul class="post-list">
-    <li><h3><a class="post-link" href="{{ "src/yoyow首页背景星点特效/index.html" | relative_url }}">yoyow首页背景星点特效</a></h3></li>
+    {%- for post in site.categories["js"] -%}
+    <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h4>
+            <a class="post-link" href="{{ post.url | relative_url }}" target="_blank">
+                {{ post.title | escape }}
+            </a>
+        </h4>
+        {%- if site.show_excerpts -%}
+        {{ post.excerpt }}
+        {%- endif -%}
+    </li>
+    {%- endfor -%}
 </ul>
