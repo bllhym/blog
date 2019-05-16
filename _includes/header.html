@@ -55,9 +55,11 @@
       {%- endfor -%}
       {%- endif -%}
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    <form class="form-inline my-2 my-lg-0" id="search" method="GET"
+      action="https://www.google.com/search?newwindow=1" target="_blank">
+      <input name="" class="form-control mr-sm-2 keyword" type="text" placeholder="搜索">
+      <input name="q" type="hidden" value=" site:bllhym.github.io/blog">
+      <button class="btn btn-secondary my-2 my-sm-0 btn-search">搜索</button>
     </form>
   </div>
   </div>

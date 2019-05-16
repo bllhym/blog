@@ -1,0 +1,19 @@
+--- 
+# Only the main Sass file needs front matter (the dashes are enough) 
+--- 
+
+/* @import "minima"; */
+body{padding-top: 90px}
+.sandstone,
+.navbar .nav-link,
+.btn,
+.nav-tabs .nav-link,
+.nav-pills .nav-link,
+.breadcrumb,
+.pagination,
+.dropdown-menu .dropdown-item,
+.tooltip{font-size: 14px}
+.social-links {
+    float: right;
+    box-sizing:unset
+}
