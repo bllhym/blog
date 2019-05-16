@@ -1,8 +1,8 @@
-title: js-css-html网页特效
+title: js-css-html网页特效 在线工具
 author: bllhym
 email: bllhym@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  收集整理自己日常看到喜欢的各种js css html网页特效
+  收集整理自己日常看到喜欢的各种js css html网页特效、在线工具
 
 show_excerpts: false # set to true to show excerpts on the homepage摘要
 
@@ -41,6 +41,7 @@ minima:
 header_pages:
  - js.md
  - css.md
+ - tool.md
 
 # Build settings
 theme: minima
