@@ -8,7 +8,7 @@ layout: default
   {%- if page.name=="js" -%}
    {%- include js.html -%}
 
-  {%- elseif page.name=="css" -%}
+  {%- elsif page.name=="css" -%}
   {%- include css.html -%}
   {%- else site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
